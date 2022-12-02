@@ -1,6 +1,12 @@
+@font-face{
+  font-family: 'MyFont';
+  src: url('./HuaGuangGangTieZhiHei.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
 .hello {
   width: 200px;
   height: 200px;
+  font-family: 'MyFont';
   color: red;
-  background: url('./icon.png');
 }
