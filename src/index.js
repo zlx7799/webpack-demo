@@ -3,11 +3,14 @@
  * @Author: zhoulx
  * @Date: 2022-11-25 14:25:03
  * @LastEditors: zhoulx
- * @LastEditTime: 2022-12-02 15:21:07
+ * @LastEditTime: 2022-12-02 16:30:01
  */
 import { join } from 'lodash';
 import './style.css';
 import Icon from './icon.png';
+import Data from './data.xml';
+import Notes from './data.csv';
+
 function component () {
   const element = document.createElement('div');
   
@@ -19,6 +22,9 @@ function component () {
   myIcon.src = Icon;
 
   element.appendChild(myIcon);
+
+  console.log('%c Data', 'color: red', Data);
+  console.log('%c Notes', 'color: red', Notes);
   return element;
 }
 
